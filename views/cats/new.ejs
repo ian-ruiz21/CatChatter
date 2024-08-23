@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Item</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <h1>Add a New Cat</h1>
+    <form action="/cats" method="POST">
+        <label for="name">Cat Name:</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="breed">Breed:</label>
+        <input type="text" name="breed" id="breed" required>
+    
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+    
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday">
+    
+        <button type="submit">Add Cat</button>
+    </form>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

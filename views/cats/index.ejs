@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cats</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    
+    <% if (cats.length) { %>
+        <ul>
+          <% cats.forEach((cat) => { %>
+          <li>
+            <%= cat.name %></a>
+          </li>
+          <% }) %>
+        </ul>
+      <% } else { %>
+          <p>"You have no cats"</p>
+     <% } %>
+     <a href="/cats/new">Add a new item</a>
+   <%- include('../partials/footer.ejs') %>
+  </body>
+</html>
