@@ -1,5 +1,32 @@
 <%- include('./partials/header.ejs') %>
 
-<h1 class="homeHeader">Home Page</h1>
+<div class="home-container">
+  <section class="hero">
+    <h1>Welcome to CatChatter</h1>
+    <p>Your one-stop destination to share and keep track of your feline friend's life!</p>
+    <p>Join our community of cat lovers and never miss an update from your friends' cats.</p>
+    <a href="/auth/sign-up" class="cta-button">Sign Up Today!</a>
+    <p>Already have an account?</p>
+    <a href="/auth/login" class="cta-button">Log in</a>
+  </section>
+
+  <section class="features">
+    <h2>Why You'll Love CatChatter</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Create Detailed Cat Profiles</h3>
+        <p>Keep track of your cat’s breed, age, and special traits with beautiful profiles.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Share Updates and Photos</h3>
+        <p>Post daily activities, health updates, and adorable photos of your cat.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Engage with a Community of Cat Lovers</h3>
+        <p>Comment on updates, share advice, and stay connected with other cat owners.</p>
+      </div>
+    </div>
+  </section>
+</div>
 
 <%- include('./partials/footer.ejs') %>

@@ -73,7 +73,7 @@ button:hover {
   color: #909c98;
 }
 
-p {
+.catChatter {
   color: black;
   font-size: xx-large;
 }
@@ -83,5 +83,72 @@ p {
 }
 
 .welcomeMsg {
+  color: black;
+}
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #34513a;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  color: #909c98;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #909c98;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #e9d7c0;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.cta-button:hover {
+  background-color: #cabba6;
+}
+
+.features {
+  margin-top: 40px;
+}
+
+.features h2 {
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-item {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.feature-item h3 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
   color: black;
 }
