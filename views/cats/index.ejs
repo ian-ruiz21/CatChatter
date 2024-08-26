@@ -12,7 +12,11 @@
         <ul>
           <% cats.forEach((cat) => { %>
           <li>
-            <%= cat.name %></a>
+            <%= cat.name %></a> ||
+          <a href="/cats/edit/<%= cat._id %>?_method=PUT" method="PUT">Edit Cat</a>
+          <form action="/cats/<%= cat._id %>?_method=DELETE" method="POST">
+            <button type="submit">❌DELETE</button>
+        </form>
           </li>
           <% }) %>
         </ul>

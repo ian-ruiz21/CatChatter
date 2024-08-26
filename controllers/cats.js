@@ -10,16 +10,10 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/new', (req, res) => {
-    console.log(req.params.userId);
     res.render('cats/new.ejs');
 });
 
-router.get('/edit', (req, res) => {
-    const cat = req.user.cats.id(req.params.id);
-    res.render('cats/edit.ejs', { cat } );
-  });
-
-router.post('/', async (req, res) => {
+  router.post('/', async (req, res) => {
     const user = await User.findById(req.user);
     req.body.owner = req.user._id;
     const cat = await Cat.create(req.body);
@@ -27,6 +21,16 @@ router.post('/', async (req, res) => {
     res.redirect(`/cats`)
 });
 
+router.delete('/:id', async (req, res) => {
+    const cat = await Cat.findByIdAndDelete(req.params.id);
+    res.redirect('/cats');
+});
 
+router.get('/edit/:id', async (req, res) => {
+    const cat = await Cat.findById(req.params.id);
+    res.render('cats/edit.ejs', { cat } );
+  });
+
+router.put('');
 
 module.exports = router;
