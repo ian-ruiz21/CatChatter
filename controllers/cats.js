@@ -31,6 +31,9 @@ router.get('/edit/:id', async (req, res) => {
     res.render('cats/edit.ejs', { cat } );
   });
 
-router.put('');
+router.put('/:id', async (req, res) => {
+    const cat = await Cat.findByIdAndUpdate(req.params.id, req.body);
+    res.redirect('/cats')
+});
 
 module.exports = router;

@@ -10,19 +10,19 @@
     <h1>Edit a <%= cat.name %> </h1>
     <form action="/cats/<%= cat._id %>?_method=PUT" method="POST">
         <label for="name">Cat Name:</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" value="<%= cat.name %>">
         
         <label for="breed">Breed:</label>
-        <input type="text" name="breed" id="breed" required>
+        <input type="text" name="breed" id="breed" required value="<%= cat.breed %>">
     
         <label for="age">Age:</label>
-        <input type="number" name="age" id="age" required>
+        <input type="number" name="age" id="age" required value="<%= cat.age %>">
     
         <label for="birthday">Birthday:</label>
-        <input type="date" name="birthday" id="birthday">
+        <input type="date" name="birthday" id="birthday" value="<%= cat.age %>">
 
         <label for="owner">Owner:</label>
-        <input type="text" name="owner" id="owner">
+        <input type="text" name="owner" id="owner" value="<%= cat.owner %>">
     
         <button type="submit">Update Cat</button>
     </form>
