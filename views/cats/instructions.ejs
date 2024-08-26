@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Instructions</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+
+    <h1>How to Upload an Image and Add a Code Link from IMGUR</h1>
+
+    <ol>
+        <li>
+            <strong>Create an IMGUR Account:</strong> 
+            <p>If you don’t already have an account, go to <a href="https://imgur.com/register" target="_blank">IMGUR</a> and sign up.</p>
+        </li>
+        <li>
+            <strong>Upload Your Image:</strong>
+            <p>Once logged in, click the "New Post" button at the top of the IMGUR homepage.</p>
+            <p>Drag and drop your image or select it from your computer.</p>
+            <p>After the image is uploaded, you can add a title or description if you like.</p>
+        </li>
+        <li>
+            <strong>Get the Image Link:</strong>
+            <p>After the image is uploaded, IMGUR will provide you with various sharing options.</p>
+            <p>Click the three dots in the top left corner</p>
+            <p>Click "Copy Link" button next to <strong>BBCode (Forums)</strong></p>
+
+        </li>
+        <li>
+            <strong>Add the Image:</strong>
+            <p>Paste into the IMGUR URL part of the form.</p>
+            <p><strong>Remove the [img] at the beginning and [/img] at the end of the pasted text.</strong></p>
+        </li>
+    </ol>
+
+    <p>If you encounter any issues, please refer to the <a href="https://help.imgur.com/hc/en-us" target="_blank">IMGUR Help Center</a>.</p>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

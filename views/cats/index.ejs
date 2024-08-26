@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Cats</title>
   </head>
   <body>
     <%- include('../partials/header.ejs') %>
-    
     <% if (cats.length) { %>
-        <ul>
-          <% cats.forEach((cat) => { %>
-          <li>
-            <%= cat.name %></a> ||
-          <a href="/cats/edit/<%= cat._id %>?_method=PUT" method="PUT">Edit Cat</a>
-          <form action="/cats/<%= cat._id %>?_method=DELETE" method="POST">
-            <button type="submit">❌DELETE</button>
+    <ul>
+      <% cats.forEach((cat) => { %>
+      <li>
+        <img src="<%= cat.photo %>"/> <br>
+        <%= cat.name %> <br>
+        <a href="/cats/edit/<%= cat._id %>?_method=PUT" method="PUT"
+          >Edit Cat</a
+        >
+        <form action="/cats/<%= cat._id %>?_method=DELETE" method="POST">
+          <button type="submit">❌</button>
         </form>
-          </li>
-          <% }) %>
-        </ul>
-      <% } else { %>
-          <p>"You have no cats"</p>
-     <% } %>
-     <a href="/cats/new">Add a new cat</a>
-   <%- include('../partials/footer.ejs') %>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>"You have no cats"</p>
+    <% } %>
+    <a href="/cats/new">Add a new cat</a>
+    <%- include('../partials/footer.ejs') %>
   </body>
 </html>

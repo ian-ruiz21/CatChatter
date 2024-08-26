@@ -152,3 +152,7 @@ button:hover {
 .feature-item p {
   color: black;
 }
+
+img {
+  height: 100px;
+}

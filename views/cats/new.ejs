@@ -23,9 +23,24 @@
 
         <label for="owner">Owner:</label>
         <input type="text" name="owner" id="owner">
+        
+        <label for="photo">IMGUR URL:&#8595;</label>
+        <input type="text" name="photo" id="photo">
+        <p>Please see<a href="/cats/instructions">instructions</a></p><br>
     
         <button type="submit">Add Cat</button>
     </form>
     <%- include('../partials/footer.ejs') %>
 </body>
+<script>
+    function trimImgTags(imgCode) {
+      return imgCode.replace(/\[img\]|\[\/img\]/g, "");
+    }
+  
+    document.getElementById('catForm').addEventListener('submit', function(event) {
+        const photoInput = document.getElementById('photo');
+        photoInput.value = trimImgTags(photoInput.value);
+    });
+  
+  </script>
 </html>
