@@ -272,12 +272,14 @@ img {
 }
 
 .cat-details h2 {
+  text-align: center;
   margin: 0;
-  font-size: 1.5em;
+  font-size: xx-large;
 }
 
 .cat-details p {
-  margin: 0.5em 0;
+  font-size: large;
+  margin: .25em;
 }
 
 .cat-details strong {
