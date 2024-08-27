@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Be Vietnam Pro", sans-serif;;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 body {
@@ -27,11 +27,11 @@ nav a {
   background-color: #34513a;
   padding: 1vmin;
   border-radius: 1vmin;
-  &:hover {
-    color: gray;
-    background-color: lightslategray;
-    color: white;
-  }
+}
+
+nav a:hover {
+  color: white;
+  background-color: lightslategray;
 }
 
 nav span {
@@ -58,6 +58,15 @@ form * {
   border-radius: 1vmin;
 }
 
+button {
+  background-color: #34513a;
+  color: #e9d7c0;
+  border: none;
+  padding: 1vmin 2vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+
 button:hover {
   background-color: lightslategray;
   color: white;
@@ -78,11 +87,7 @@ button:hover {
   font-size: xx-large;
 }
 
-.homeHeader {
-  color: black;
-}
-
-.welcomeMsg {
+.homeHeader, .welcomeMsg {
   color: black;
 }
 
@@ -97,14 +102,16 @@ button:hover {
   border-radius: 10px;
 }
 
-.hero h1 {
+.hero h1, .hero p {
   color: #909c98;
+}
+
+.hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
 }
 
 .hero p {
-  color: #909c98;
   font-size: 1.2em;
   margin-bottom: 20px;
 }
@@ -143,16 +150,136 @@ button:hover {
   text-align: center;
 }
 
-.feature-item h3 {
+.feature-item h3, .feature-item p {
   color: black;
+}
+
+.feature-item h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.feature-item p {
-  color: black;
-}
 
 img {
   height: 100px;
+  width: auto; 
+  object-fit: cover;
+  border-radius: 10px; 
+  margin-right: 2vmin;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+li {
+  background-color: #f5f0e1;
+  margin: 1vmin 0;
+  padding: 2vmin;
+  border-radius: 1vmin;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li div {
+  margin-right: 2vmin;
+}
+
+li div a {
+  text-decoration: none;
+  color: #34513a;
+  background-color: #e9d7c0;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  margin-top: 1vmin;
+  display: inline-block;
+}
+
+li div a:hover {
+  background-color: lightslategray;
+  color: white;
+}
+
+li div form {
+  display: inline;
+}
+
+a {
+  display: inline-block;
+  margin: 2vmin 0;
+  text-decoration: none;
+  color: #909c98;
+  background-color: #34513a; 
+  padding: 1vmin;
+  border-radius: 1vmin;
+}
+
+a:hover {
+  background-color: lightslategray;
+}
+
+p {
+  text-align: center;
+  color: #909c98;
+  font-size: 2em;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.indexItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* General styles for the allCats page */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 1em 0;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+.cat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+img {
+  height: 150px; /* Adjust as needed */
+  width: 150px;  /* Adjust as needed */
+  border-radius: 8px;
+}
+
+.cat-details {
+  flex: 1;
+}
+
+.cat-details h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.cat-details p {
+  margin: 0.5em 0;
+}
+
+.cat-details strong {
+  font-weight: bold;
 }

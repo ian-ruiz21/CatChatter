@@ -15,10 +15,14 @@
          outside of the if/else 
     -->
     <a href="/">HOME</a>
+    <% if (user) { %>
+      <a href="/cats/show">All Cats</a>
+    <% } %>
+
     <p class="catChatter">CatChatter</p>
     <div>
       <% if (user) { %>
-        <a href="/updates">My Updates</a>&nbsp;&nbsp;
+        <!-- <a href="/updates">My Updates</a>&nbsp;&nbsp; -->
         <a href="/cats">My Cats</a>&nbsp;&nbsp;
         <a href="/auth/logout">LOG OUT</a>&nbsp;&nbsp;
         <span class="welcomeMsg">Welcome, <%= user.username %></span>

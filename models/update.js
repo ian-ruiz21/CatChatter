@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const updateSchema = new mongoose.Schema({
-    cat: {  // Reference to the cat
+    cat: {  
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Cat',
         required: true

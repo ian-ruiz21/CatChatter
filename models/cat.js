@@ -20,11 +20,15 @@ const catSchema = new mongoose.Schema({
     owner: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-        // required: true,
+        required: true,
     },
     photo: {
         type: String
-    }
+    },
+    updates: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Update'
+    }                       
 });
 
 module.exports = mongoose.model("Cat", catSchema);

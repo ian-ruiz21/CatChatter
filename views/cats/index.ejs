@@ -10,15 +10,22 @@
     <% if (cats.length) { %>
     <ul>
       <% cats.forEach((cat) => { %>
-      <li>
-        <img src="<%= cat.photo %>"/> <br>
-        <%= cat.name %> <br>
+      <li class="indexItem">
+        <div class="indexItem">
+        <img src="<%= cat.photo %>"/>
+        </div>
+        <div class="indexItem">
+        <%= cat.name %>
+        </div>
+        
         <a href="/cats/edit/<%= cat._id %>?_method=PUT" method="PUT"
-          >Edit Cat</a
-        >
+          >Edit Cat</a>
+        
+        <div>
         <form action="/cats/<%= cat._id %>?_method=DELETE" method="POST">
           <button type="submit">❌</button>
         </form>
+        </div>
       </li>
       <% }) %>
     </ul>

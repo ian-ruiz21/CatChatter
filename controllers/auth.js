@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+
 
 // All paths start with "/auth"
 
@@ -38,7 +39,7 @@ router.post('/login', async (req, res) => {
       req.session.user = { _id: user._id };
       req.session.save();
       // Perhaps update to some other functionality
-      return res.redirect('/');
+      return res.redirect('/cats');
     } else {
       return res.redirect('/auth/login');
     }

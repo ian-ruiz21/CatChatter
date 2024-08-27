@@ -40,4 +40,10 @@ router.put("/:id", async (req, res) => {
   res.redirect("/cats");
 });
 
+router.get('/show', async (req, res) => {
+  const cats = await Cat.find({});
+  res.render('cats/show.ejs', { cats });
+});
+
+
 module.exports = router;

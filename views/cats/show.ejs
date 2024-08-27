@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Cats</title>
+  <!-- Add your CSS here -->
+</head>
+<body>
+  <%- include('../partials/header.ejs') %>
+  <h1>All Cats</h1>
+  <% if (cats.length) { %>
+    <ul>
+      <% cats.forEach(cat => { %>
+        <li>
+          <div class="cat-item">
+            <img src="<%= cat.photo %>" alt="<%= cat.name %>">
+            <div class="cat-details">
+              <h2><%= cat.name %></h2>
+              <p><strong>Breed:</strong> <%= cat.breed %></p>
+              <p><strong>Age:</strong> <%= cat.age %> years</p>
+            </div>
+          </div>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No cats available</p>
+  <% } %>
+  <%- include('../partials/footer.ejs') %>
+</body>
+</html>
