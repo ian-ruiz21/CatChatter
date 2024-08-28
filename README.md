@@ -20,11 +20,11 @@ The idea for this app originated from my love for cats and the need for a platfo
 
 Here's how you can use and explore the app:
 
-- **Explore Online:** [Click here to visit **CatChatter**](https://yourwebsite.com/catchatter)
+- **Explore Online:** [Click here to visit **CatChatter**](https://catchatter-1c7ed3fc854b.herokuapp.com/)
 
 ### Planning Materials
 
-- Link to wireframe and ERD (https://github.com/yourusername/CatChatter/tree/main/planning)
+- https://trello.com/b/0xTMKmeG/catchatter
 
 ---
 

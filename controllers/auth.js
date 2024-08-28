@@ -39,7 +39,7 @@ router.post('/login', async (req, res) => {
       req.session.user = { _id: user._id };
       req.session.save();
       // Perhaps update to some other functionality
-      return res.redirect('/cats');
+      return res.redirect('/cats/show');
     } else {
       return res.redirect('/auth/login');
     }
