@@ -12,7 +12,7 @@ The idea for this app originated from my love for cats and the need for a platfo
 
 ![All Cats Page](/public/assets/CatChatterLandingPage.png)
 
-*Here I have included a screenshot of the page where users can view all cats in the system.*
+*Here I have included a screenshot of the application's landing page.*
 
 ---
 
@@ -38,11 +38,30 @@ Here's how you can use and explore the app:
 ---
 
 ## Technologies Used
-- **Node.js**: For server-side scripting.
-- **Express**: To manage routes and server logic.
-- **MongoDB**: For storing cat profiles and updates.
-- **EJS**: To render dynamic pages on the server.
-- **CSS**: For styling the app and making it visually appealing.
+# Technologies Used
+- **Frontend**: 
+  - HTML5 
+  - CSS3
+  - JavaScript 
+  - EJS (Embedded JavaScript templates)
+- **Backend**: 
+  - Node.js 
+  - Express.js
+- **Database**: 
+  - MongoDB 
+  - Mongoose
+- **Styling**: 
+  - Flexbox 
+  - Grid Layout 
+  - Custom CSS
+- **Version Control**: 
+  - Git 
+  - GitHub
+- **Development Tools**: 
+  - Visual Studio Code
+  - Lucid Chart
+  - Canva
+  - Trello
 
 ## Next Steps
 Here are some planned features for future versions of the app:
