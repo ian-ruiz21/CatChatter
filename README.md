@@ -10,7 +10,7 @@ The idea for this app originated from my love for cats and the need for a platfo
 
 ## Screenshot
 
-![All Cats Page](./assets/catchatterAllCatsPage.png)
+![All Cats Page](/public/assets/CatChatterLandingPage.png)
 
 *Here I have included a screenshot of the page where users can view all cats in the system.*
 
@@ -30,10 +30,10 @@ Here's how you can use and explore the app:
 
 ## Attributions
 
-- Button Styles - https://uiverse.io/
 - Font - https://fonts.google.com/specimen/Be+Vietnam+Pro
 - Favicon - https://www.favicon-generator.org/
 - Icons - https://www.iconpacks.net/
+- 
 
 ---
 
