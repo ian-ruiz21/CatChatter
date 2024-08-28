@@ -15,6 +15,7 @@ router.get("/new", (req, res) => {
 router.post("/", async (req, res) => {
   const user = await User.findById(req.user);
   req.body.owner = req.user._id;
+  req.body.dater += 'T00:00';
   const cat = await Cat.create(req.body);
 
   res.redirect(`/cats`);
@@ -42,6 +43,11 @@ router.put("/:id", async (req, res) => {
 router.get('/show', async (req, res) => {
   const cats = await Cat.find({});
   res.render('cats/show.ejs', { cats });
+});
+
+router.get('/showCat/:id', async (req, res) => {
+  const cat = await Cat.findById(req.params.id);
+  res.render("cats/showCat.ejs", { cat });
 });
 
 

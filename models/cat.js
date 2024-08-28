@@ -14,7 +14,7 @@ const catSchema = new mongoose.Schema({
         required: true,
     },
     birthday: {
-        type: Date,
+        type: Date, default: () => Date.now(),
         default: null
     },
     owner: {
@@ -24,11 +24,7 @@ const catSchema = new mongoose.Schema({
     },
     photo: {
         type: String
-    },
-    updates: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Update'
-    }                       
+    }                    
 });
 
 module.exports = mongoose.model("Cat", catSchema);

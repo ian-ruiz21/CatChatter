@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= cat.name %>></title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <h1><%= cat.name %></h1>
+    <ol>
+        <li class="instructions">
+            <strong>Breed:</strong> 
+            <p> <%= cat.breed %></p>
+        </li>
+        <li class="instructions">
+            <strong>Age:</strong>
+            <p> <%= cat.age %></p>
+        </li>
+        <li class="instructions">
+            <strong>Birthday</strong>
+            <p><%= cat.birthday.toLocaleDateString() %></p>
+        </li>
+        <li class="instructions">
+            <strong>Photo:</strong>
+            <img src="<%= cat.photo %>" alt="<%= cat.name %>" class="showImg">
+        </li>
+    </ol>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
