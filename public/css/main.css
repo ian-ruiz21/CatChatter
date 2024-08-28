@@ -226,7 +226,7 @@ a:hover {
 p {
   text-align: center;
   color: #909c98;
-  font-size: 2em;
+  font-size: large;
 }
 
 .footer {
@@ -240,14 +240,13 @@ p {
   justify-content: space-between;
 }
 
-/* General styles for the allCats page */
-ul {
+.showUl {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.showLi {
   margin: 1em 0;
   display: flex;
   align-items: flex-start;
@@ -262,8 +261,8 @@ li {
 }
 
 img {
-  height: 150px; /* Adjust as needed */
-  width: 150px;  /* Adjust as needed */
+  height: 150px; 
+  width: 150px;  
   border-radius: 8px;
 }
 
@@ -271,17 +270,17 @@ img {
   flex: 1;
 }
 
-.cat-details h2 {
+.cat-details {
   text-align: center;
   margin: 0;
   font-size: xx-large;
 }
 
-.cat-details p {
+.cat-details {
   font-size: large;
   margin: .25em;
 }
 
-.cat-details strong {
+.cat-details {
   font-weight: bold;
 }

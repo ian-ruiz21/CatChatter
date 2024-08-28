@@ -10,15 +10,13 @@
   <%- include('../partials/header.ejs') %>
   <h1>All Cats</h1>
   <% if (cats.length) { %>
-    <ul>
+    <ul class="showUl">
       <% cats.forEach(cat => { %>
-        <li>
+        <li class="showLi">
           <div class="cat-item">
-            <img src="<%= cat.photo %>" alt="<%= cat.name %>">
+            <img src="<%= cat.photo %>" alt="<%= cat.name %>" class="showImg">
             <div class="cat-details">
               <h2><%= cat.name %></h2>
-              <p><strong>Breed:</strong> <%= cat.breed %></p>
-              <p><strong>Age:</strong> <%= cat.age %> years</p>
             </div>
           </div>
         </li>

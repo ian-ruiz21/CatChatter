@@ -38,12 +38,10 @@ app.use(addUserToReqAndLocals);
 
 const ensureLoggedIn = require('./middleware/ensureLoggedIn');
 const catCtlr = require('./controllers/cats.js');
-const updateCtlr = require('./controllers/updates.js');
 // '/auth' is a "starts with" path that all paths
 // within authCtrl are appended to
 app.use('/auth', require('./controllers/auth'));
 app.use('/cats', ensureLoggedIn, catCtlr);
-app.use('/updates', ensureLoggedIn, updateCtlr);
 // If you wanted to protect ALL routes 
 // app.use('/todos', ensureLoggedIn, require('./controllers/todos'));
 

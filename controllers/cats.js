@@ -1,4 +1,3 @@
-// controllers/cats.js
 const express = require("express");
 const router = express.Router();
 const Cat = require("../models/cat.js");
