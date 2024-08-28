@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add a New Item</title>
-</head>
-<body>
     <%- include('../partials/header.ejs') %>
     <h1>Add a New Cat</h1>
     <form action="/cats" method="POST">
@@ -24,12 +16,10 @@
         <label for="owner">Owner:</label>
         <input type="text" name="owner" id="owner">
         
-        <label for="photo">IMGUR URL:&#8595;</label>
+        <label for="photo">IMGUR URL: &#8595;</label>
         <input type="url" name="photo" id="photo">
-        <p>Please see<a href="/cats/instructions">instructions</a></p><br>
+        <p>Please see <a href="/cats/instructions">instructions</a></p>
     
         <button type="submit">Add Cat</button>
     </form>
     <%- include('../partials/footer.ejs') %>
-</body>
-</html>

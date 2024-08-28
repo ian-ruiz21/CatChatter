@@ -1,32 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update a Cat</title>
-</head>
-<body>
-    <%- include('../partials/header.ejs') %>
-    <h1>Edit <%= cat.name %> </h1>
-    <form action="/cats/<%= cat._id %>?_method=PUT" method="POST">
-        <label for="name">Cat Name:</label>
-        <input type="text" name="name" id="name" value="<%= cat.name %>">
-        
-        <label for="breed">Breed:</label>
-        <input type="text" name="breed" id="breed" required value="<%= cat.breed %>">
-    
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age" required value="<%= cat.age %>">
-    
-        <label for="birthday">Birthday:</label>
-        <input type="date" name="birthday" id="birthday" value="<%= cat.age %>">
-        
-        <label for="photo">IMGUR URL:</label>
-        <input type="text" name="photo" id="photo" value="<%= cat.photo %>">
-        <p>Please see <a href="/cats/instructions">instructions</a></p>
-    
-        <button type="submit">Update Cat</button>
-    </form>
-    <%- include('../partials/footer.ejs') %>
-</body>
-</html>
+<%- include('../partials/header.ejs') %>
+<h1>Edit <%= cat.name %></h1>
+<form action="/cats/<%= cat._id %>?_method=PUT" method="POST">
+  <label for="name">Cat Name:</label>
+  <input type="text" name="name" id="name" value="<%= cat.name %>" />
+
+  <label for="breed">Breed:</label>
+  <input type="text" name="breed" id="breed" required value="<%= cat.breed %>"/>
+
+  <label for="age">Age:</label>
+  <input type="number" name="age" id="age" required value="<%= cat.age %>" />
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" name="birthday" id="birthday" value="<%= cat.age %>" />
+
+  <label for="photo">IMGUR URL:</label>
+  <input type="text" name="photo" id="photo" value="<%= cat.photo %>" />
+  <p>Please see <a href="/cats/instructions">instructions</a></p>
+
+  <button type="submit" class="updateBtn">Update Cat</button>
+</form>
+<%- include('../partials/footer.ejs') %>

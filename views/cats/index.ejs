@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Cats</title>
-  </head>
-  <body>
-    <%- include('../partials/header.ejs') %>
-    <% if (cats.length) { %>
+    <%- include('../partials/header.ejs') %> <% if (cats.length) { %>
     <ul>
       <% cats.forEach((cat) => { %>
       <li class="indexItem">
         <div class="indexItem">
-        <img src="<%= cat.photo %>"/>
+          <img src="<%= cat.photo %>" />
         </div>
-        <div class="indexItem">
-        <%= cat.name %>
-        </div>
+        <div class="indexItem"><%= cat.name %></div>
 
         <form action="/cats/<%= cat._id %>?_method=DELETE" method="POST">
           <a href="/cats/edit/<%= cat._id %>?_method=PUT" method="PUT"
-            >Edit Cat</a>
+            >Edit Cat</a
+          >
           <button type="submit" class="deleteBtn">❌</button>
         </form>
-        
       </li>
       <% }) %>
     </ul>
@@ -32,5 +21,3 @@
     <% } %>
     <a href="/cats/new">Add a new cat</a>
     <%- include('../partials/footer.ejs') %>
-  </body>
-</html>

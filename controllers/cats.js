@@ -17,7 +17,6 @@ router.post("/", async (req, res) => {
   req.body.owner = req.user._id;
   req.body.dater += 'T00:00';
   const cat = await Cat.create(req.body);
-
   res.redirect(`/cats`);
 });
 
