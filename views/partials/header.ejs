@@ -12,11 +12,12 @@
 </head>
 <body>
   <nav>
-    <a href="/">HOME</a>
+    <div>
+    <a href="/">HOME</a>&nbsp;&nbsp;
     <% if (user) { %>
-      <a href="/cats/show">All Cats</a>
+      <a href="/cats/show" class="allCats">All Cats</a>
     <% } %>
-
+    </div>
     <p class="catChatter">CatChatter</p>
     <div>
       <% if (user) { %>
