@@ -33,7 +33,6 @@ Here's how you can use and explore the app:
 - Font - https://fonts.google.com/specimen/Be+Vietnam+Pro
 - Favicon - https://www.favicon-generator.org/
 - Icons - https://www.iconpacks.net/
-- 
 
 ---
 
@@ -65,11 +64,8 @@ Here's how you can use and explore the app:
 
 ## Next Steps
 Here are some planned features for future versions of the app:
-1. **Commenting System**:
+1. **Cat Update Feature**:
+    - Add the ability for users to be able to post updates about their cats.
+2. **Commenting System**:
     - Allow users to comment on cat updates and interact with each other.
-2. **Cat Adoption Feature**:
-    - Add a section where users can view cats available for adoption.
-3. **Notification System**:
-    - Notify users when there are new updates about the cats they follow.
-4. **Mobile Optimization**:
-    - Ensure the app is fully responsive and optimized for mobile devices.
+
